@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import { Panel } from "./components";
+import Home from "./views/Home";
 
 function App() {
   const [dark, setDark] = useState<boolean>(false);
@@ -10,8 +11,8 @@ function App() {
     <>
       <Panel dark={dark} setDark={setDark} />
       <Routes>
-        <Route path="/" element={<>home</>} />
-        <Route path="/" element={<>cup</>} />
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Cup} />
       </Routes>
     </>
   );

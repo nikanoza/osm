@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import Logo from "../assets/logo.png";
+import { Sun } from "../svg";
+import Moon from "../svg/Moon";
 
 const Panel: React.FC<{
   dark: boolean;
@@ -12,9 +14,13 @@ const Panel: React.FC<{
         {dark ? (
           <>
             <h3>SUN</h3>
+            <Sun onClick={() => setDark(false)} />
           </>
         ) : (
-          <></>
+          <>
+            <h3>MOON</h3>
+            <Moon onClick={() => setDark(true)} />
+          </>
         )}
       </ThemeBox>
     </Main>
@@ -42,4 +48,5 @@ const ThemeBox = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+  color: white;
 `;
