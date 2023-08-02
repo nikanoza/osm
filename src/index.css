@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --violet: #7c5dfa;
+  --violetHover: #9277ff;
+  --darkBlue: #1e2139;
+  --blue: #252945;
+  --lightgray: #dfe3fa;
+  --gray: #888eb0;
+  --highGray: #7e88c3;
+  --dark: #0c0e16;
+  --error: #ec5757;
+  --errorHover: #ff9797;
+  --light: #f8f8fb;
+  --darkBlue: #141625;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  height: 100;
+}
