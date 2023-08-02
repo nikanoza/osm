@@ -1,6 +1,8 @@
+import styled from "styled-components";
+
 const Sun: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
-    <svg
+    <Svg
       width="20"
       height="20"
       xmlns="http://www.w3.org/2000/svg"
@@ -11,8 +13,12 @@ const Sun: React.FC<{ onClick: () => void }> = ({ onClick }) => {
         fill="#858BB2"
         fillRule="nonzero"
       />
-    </svg>
+    </Svg>
   );
 };
 
 export default Sun;
+
+const Svg = styled.svg`
+  cursor: pointer;
+`;

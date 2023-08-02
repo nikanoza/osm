@@ -1,6 +1,8 @@
+import styled from "styled-components";
+
 const Moon: React.FC<{ onClick: () => void }> = ({ onClick }) => {
   return (
-    <svg
+    <Svg
       width="20"
       height="20"
       xmlns="http://www.w3.org/2000/svg"
@@ -11,8 +13,12 @@ const Moon: React.FC<{ onClick: () => void }> = ({ onClick }) => {
         fill="#7E88C3"
         fillRule="nonzero"
       />
-    </svg>
+    </Svg>
   );
 };
 
 export default Moon;
+
+const Svg = styled.svg`
+  cursor: pointer;
+`;
